@@ -1,0 +1,9 @@
+Simple Firefox addon that makes vkvideo player wider.
+Just click on icon, and right side panel goes away.
+Second click gives it back.
+
+Since addon does not consist any signature, use this Firefox hint (though this
+only works in esr, dev and nightly):
+  xpinstall.signatures.required=false
+
+Then pack all files to vkw.zip and install.

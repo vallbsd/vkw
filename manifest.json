@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "vkw",
+  "version": "1.0",
+  "description": "Make vkvideo player wider.",
+  "icons": {
+    "24": "vkw.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "vkw@example.com"
+    }
+  },
+
+  "browser_action": {},
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://vkvideo.ru/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
